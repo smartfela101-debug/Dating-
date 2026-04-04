@@ -406,7 +406,7 @@
   function cardHTML(p, i) {
     const delay  = (i % PAGE_SIZE) * 50;
     const imgSrc = p.photo
-      ? (p.photo.startsWith('http') ? p.photo : `https://datings.pythonanywhere.com$${p.photo}`)
+      ? (p.photo.startsWith('http') ? p.photo : `https://datings.pythonanywhere.com${p.photo}`)
       : 'https://placehold.co/400x530/f5e6cc/8a7060?text=No+Photo';
 
     const waMsg  = encodeURIComponent(`Hi ${p.name}, I saw your profile on AfroMatch 🌍`);
